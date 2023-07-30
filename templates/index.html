@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HNH ToDo app</title>
+</head>
+<body style="background-color: rgb(34, 43, 43);">
+    <h1> DoIt List</h1>
+    <ul>
+        {% for todo in todos %}
+        <ol>
+           {{todo['todo']}}
+        </ol>
+        {% endfor %}
+    </ul>
+</body>
+</html>
