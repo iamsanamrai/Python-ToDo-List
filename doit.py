@@ -24,6 +24,12 @@ def edit(index):
         return redirect(url_for(index))
     else:
         return render_template("edit.html", todo=todo, index=index)
+    
+
+@app.route("/delete/<int:index>")
+def delet(index):
+    del todos[index]
+    return redirect(url_for("index"))
 
 
 if __name__ == '__main__':
